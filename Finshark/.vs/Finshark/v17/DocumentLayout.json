@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\",
+  "WorkspaceRootPath": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|d:\\study\\hk2 2023-2024\\api\\finshark\\finshark\\finshark\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|solutionrelative:finshark\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|d:\\study\\hk2 2023-2024\\api\\finshark_api\\finshark\\finshark\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|solutionrelative:finshark\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|d:\\study\\hk2 2023-2024\\api\\finshark\\finshark\\finshark\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|d:\\study\\hk2 2023-2024\\api\\finshark_api\\finshark\\finshark\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|solutionrelative:finshark\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,34 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 13,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\Finshark\\Program.cs",
-              "RelativeDocumentMoniker": "Finshark\\Program.cs",
-              "ToolTip": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\Finshark\\Program.cs",
-              "RelativeToolTip": "Finshark\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T12:09:49.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StockController.cs",
-              "DocumentMoniker": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\Finshark\\Controllers\\StockController.cs",
-              "RelativeDocumentMoniker": "Finshark\\Controllers\\StockController.cs",
-              "ToolTip": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\Finshark\\Controllers\\StockController.cs",
-              "RelativeToolTip": "Finshark\\Controllers\\StockController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwCQAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T11:25:12.298Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -93,6 +67,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StockController.cs",
+              "DocumentMoniker": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Controllers\\StockController.cs",
+              "RelativeDocumentMoniker": "Finshark\\Controllers\\StockController.cs",
+              "ToolTip": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Controllers\\StockController.cs",
+              "RelativeToolTip": "Finshark\\Controllers\\StockController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:36:49.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "StockMappers.cs",
+              "DocumentMoniker": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Mappers\\StockMappers.cs",
+              "RelativeDocumentMoniker": "Finshark\\Mappers\\StockMappers.cs",
+              "ToolTip": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Mappers\\StockMappers.cs",
+              "RelativeToolTip": "Finshark\\Mappers\\StockMappers.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-18T16:28:32.055Z",
+              "EditorCaption": ""
             }
           ]
         }

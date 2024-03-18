@@ -11,6 +11,22 @@
   },
   {
     "ContainingType": "Finshark.Controllers.StockController",
+    "Method": "Create",
+    "RelativePath": "finshark/stock",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "stockDto",
+        "Type": "Finshark.Dtos.Stock.CreateStockRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Finshark.Controllers.StockController",
     "Method": "GetById",
     "RelativePath": "finshark/stock/{id}",
     "HttpMethod": "GET",

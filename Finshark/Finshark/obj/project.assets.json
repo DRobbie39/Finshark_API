@@ -4538,11 +4538,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\Finshark\\Finshark.csproj",
+      "projectUniqueName": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Finshark.csproj",
       "projectName": "Finshark",
-      "projectPath": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\Finshark\\Finshark.csproj",
+      "projectPath": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Finshark.csproj",
       "packagesPath": "C:\\Users\\ACER\\.nuget\\packages\\",
-      "outputPath": "D:\\Study\\HK2 2023-2024\\API\\Finshark\\Finshark\\Finshark\\obj\\",
+      "outputPath": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ACER\\AppData\\Roaming\\NuGet\\NuGet.Config",

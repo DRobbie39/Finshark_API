@@ -3,15 +3,11 @@
   "WorkspaceRootPath": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\finshark\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|d:\\study\\hk2 2023-2024\\api\\finshark_api\\finshark\\finshark\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|solutionrelative:finshark\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|d:\\study\\hk2 2023-2024\\api\\finshark_api\\finshark\\finshark\\dtos\\stock\\updatestockrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|solutionrelative:finshark\\dtos\\stock\\updatestockrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|d:\\study\\hk2 2023-2024\\api\\finshark_api\\finshark\\finshark\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\finshark\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0A6E32C0-23A7-4F59-B099-C1EF95E32239}|Finshark\\Finshark.csproj|solutionrelative:finshark\\mappers\\stockmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,25 +71,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateStockRequestDto.cs",
-              "DocumentMoniker": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Dtos\\Stock\\UpdateStockRequestDto.cs",
-              "RelativeDocumentMoniker": "Finshark\\Dtos\\Stock\\UpdateStockRequestDto.cs",
-              "ToolTip": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Dtos\\Stock\\UpdateStockRequestDto.cs",
-              "RelativeToolTip": "Finshark\\Dtos\\Stock\\UpdateStockRequestDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-19T05:58:35.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "StockMappers.cs",
               "DocumentMoniker": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Mappers\\StockMappers.cs",
               "RelativeDocumentMoniker": "Finshark\\Mappers\\StockMappers.cs",
               "ToolTip": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Mappers\\StockMappers.cs",
               "RelativeToolTip": "Finshark\\Mappers\\StockMappers.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-19T05:44:09.237Z",
               "EditorCaption": ""
@@ -106,7 +89,7 @@
               "RelativeDocumentMoniker": "Finshark\\Controllers\\StockController.cs",
               "ToolTip": "D:\\Study\\HK2 2023-2024\\API\\Finshark_API\\Finshark\\Finshark\\Controllers\\StockController.cs",
               "RelativeToolTip": "Finshark\\Controllers\\StockController.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAuwDoAAAAJAAAA",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAAAFgAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-18T16:36:49.452Z",
               "EditorCaption": ""

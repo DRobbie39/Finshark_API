@@ -1,18 +1,8 @@
 [
   {
     "ContainingType": "Finshark.Controllers.StockController",
-    "Method": "GetAll",
-    "RelativePath": "finshark/stock",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Finshark.Controllers.StockController",
     "Method": "Create",
-    "RelativePath": "finshark/stock",
+    "RelativePath": "finshark/Stock/Create",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -27,8 +17,34 @@
   },
   {
     "ContainingType": "Finshark.Controllers.StockController",
+    "Method": "Delete",
+    "RelativePath": "finshark/Stock/Delete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Finshark.Controllers.StockController",
+    "Method": "GetAll",
+    "RelativePath": "finshark/Stock/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Finshark.Controllers.StockController",
     "Method": "GetById",
-    "RelativePath": "finshark/stock/{id}",
+    "RelativePath": "finshark/Stock/GetById/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -44,7 +60,7 @@
   {
     "ContainingType": "Finshark.Controllers.StockController",
     "Method": "Update",
-    "RelativePath": "finshark/stock/{id}",
+    "RelativePath": "finshark/Stock/Update/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

@@ -2,6 +2,7 @@
 using Finshark.Dtos.Stock;
 using Finshark.Mappers;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Finshark.Controllers
 {
@@ -18,19 +19,20 @@ namespace Finshark.Controllers
 
         //Phương thức trả về tất cả đối tượng theo dạng danh sách
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
             //Select(s => s.ToStockDto()) sẽ trả về các mảng không thay đổi hoặc các list không thay đổi
-            var stocks = _context.Stocks.ToList().Select(s => s.ToStockDto());
+            var stocks = await _context.Stocks.ToListAsync();
+            var stockDto = stocks.Select(s => s.ToStockDto());
 
             return Ok(stocks);
         }
 
         //Phương thức chỉ lấy một đối tượng lấy theo id
         [HttpGet("{id}")] //Trích xuất chuỗi id
-        public IActionResult GetById([FromRoute] int id) //Xong điền vào tham số rồi thực thi đoạn code ở dưới
+        public async Task<IActionResult> GetById([FromRoute] int id) //Xong điền vào tham số rồi thực thi đoạn code ở dưới
         {
-            var stock = _context.Stocks.Find(id);
+            var stock = await _context.Stocks.FindAsync(id);
 
             if(stock == null)
             {
@@ -43,11 +45,11 @@ namespace Finshark.Controllers
         //FromBody để đưa dữ liệu JSON vào thân HTTP, chứ không đưa bằng URL
         //CreateStockRequest stockDto là phương thức DTO cho người dùng nhập dữ liệu cần thiết, tránh nhập nhiều dữ liệu không cần thiết
         [HttpPost]
-        public IActionResult Create([FromBody] CreateStockRequestDto stockDto) //FromBody để đưa dữ liệu JSON vào thân HTTP, chứ không đưa bằng URL
+        public async Task<IActionResult> Create([FromBody] CreateStockRequestDto stockDto) //FromBody để đưa dữ liệu JSON vào thân HTTP, chứ không đưa bằng URL
         {
             var stockModel = stockDto.ToStockFromCreateDTO();
-            _context.Stocks.Add(stockModel);
-            _context.SaveChanges();
+            await _context.Stocks.AddAsync(stockModel);
+            await _context.SaveChangesAsync();
 
             //Chạy vào phương thức GetById để lấy Id sau đó tạo mới Id và chạy ToStockDto
             return CreatedAtAction(nameof(GetById), new {id = stockModel.Id}, stockModel.ToStockDto());
@@ -55,9 +57,9 @@ namespace Finshark.Controllers
 
         [HttpPut]
         [Route("{id}")]
-        public IActionResult Update([FromRoute] int id, [FromBody] UpdateStockRequestDto updateDto)
+        public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateStockRequestDto updateDto)
         {
-            var stockModel = _context.Stocks.FirstOrDefault(x => x.Id == id);
+            var stockModel = await _context.Stocks.FirstOrDefaultAsync(x => x.Id == id);
 
             if(stockModel == null)
             {
@@ -72,25 +74,26 @@ namespace Finshark.Controllers
             stockModel.Industry = updateDto.Industry;
             stockModel.MarketCap = updateDto.MarketCap;
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             return Ok(stockModel.ToStockDto());
         }
 
         [HttpDelete]
         [Route("{id}")]
-        public IActionResult Delete([FromRoute] int id)
+        public async Task<IActionResult> Delete([FromRoute] int id)
         {
-            var stockModel = _context.Stocks.FirstOrDefault(x => x.Id == id);
+            var stockModel = await _context.Stocks.FirstOrDefaultAsync(x => x.Id == id);
 
             if(stockModel == null)
             {
                 return NotFound();
             }
 
+            //Không thêm await do Remove() không cho
             _context.Stocks.Remove(stockModel);
 
-            _context.SaveChanges();
+            await _context.SaveChangesAsync();
 
             //NoContent() để cho biết việc xóa đã thành công
             return NoContent();

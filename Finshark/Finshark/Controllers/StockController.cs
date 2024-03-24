@@ -1,5 +1,6 @@
 ﻿using Finshark.Data;
 using Finshark.Dtos.Stock;
+using Finshark.Interfaces;
 using Finshark.Mappers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,9 +12,11 @@ namespace Finshark.Controllers
     public class StockController : ControllerBase 
     {
         private readonly ApplicationDBContext _context; //Tăng khả năng bảo mật để tránh các tác nhân ngoài thay đổi CSDL
+        private readonly IStockRepository _stockRepo;
         //Constructor khởi tạo CSDL
-        public StockController(ApplicationDBContext context)
+        public StockController(ApplicationDBContext context, IStockRepository stockRepo)
         {
+            _stockRepo = stockRepo;
             _context = context;
         }
 
@@ -22,7 +25,7 @@ namespace Finshark.Controllers
         public async Task<IActionResult> GetAll()
         {
             //Select(s => s.ToStockDto()) sẽ trả về các mảng không thay đổi hoặc các list không thay đổi
-            var stocks = await _context.Stocks.ToListAsync();
+            var stocks = await _stockRepo.GetAllAsync();
             var stockDto = stocks.Select(s => s.ToStockDto());
 
             return Ok(stocks);

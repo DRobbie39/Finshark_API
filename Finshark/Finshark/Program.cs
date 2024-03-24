@@ -1,4 +1,6 @@
 ﻿using Finshark.Data;
+using Finshark.Interfaces;
+using Finshark.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,6 +18,9 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     //Cho biết kết nối với CSDL nào
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+// Kết nối các dịch vụ
+builder.Services.AddScoped<IStockRepository, StockRepository>();
 
 var app = builder.Build();
 
